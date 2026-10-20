@@ -1,0 +1,4 @@
+# Optional: only for retraining/exporting the model, not for running the website.
+# Versions used by this project's training environment.
+numpy==1.26.4
+torch==2.13.0

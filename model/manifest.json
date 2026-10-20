@@ -1,0 +1,359 @@
+{
+  "config": {
+    "image_size": 28,
+    "patch_size": 7,
+    "dim": 48,
+    "heads": 4,
+    "layers": 3,
+    "hidden_dim": 96,
+    "classes": 10,
+    "eps": 1e-05
+  },
+  "manifest": {
+    "cls": {
+      "shape": [
+        1,
+        1,
+        48
+      ],
+      "offset": 0,
+      "length": 48
+    },
+    "pos": {
+      "shape": [
+        1,
+        17,
+        48
+      ],
+      "offset": 48,
+      "length": 816
+    },
+    "patch.weight": {
+      "shape": [
+        48,
+        49
+      ],
+      "offset": 864,
+      "length": 2352
+    },
+    "patch.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 3216,
+      "length": 48
+    },
+    "blocks.0.norm1.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 3264,
+      "length": 48
+    },
+    "blocks.0.norm1.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 3312,
+      "length": 48
+    },
+    "blocks.0.qkv.weight": {
+      "shape": [
+        144,
+        48
+      ],
+      "offset": 3360,
+      "length": 6912
+    },
+    "blocks.0.qkv.bias": {
+      "shape": [
+        144
+      ],
+      "offset": 10272,
+      "length": 144
+    },
+    "blocks.0.proj.weight": {
+      "shape": [
+        48,
+        48
+      ],
+      "offset": 10416,
+      "length": 2304
+    },
+    "blocks.0.proj.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 12720,
+      "length": 48
+    },
+    "blocks.0.norm2.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 12768,
+      "length": 48
+    },
+    "blocks.0.norm2.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 12816,
+      "length": 48
+    },
+    "blocks.0.fc1.weight": {
+      "shape": [
+        96,
+        48
+      ],
+      "offset": 12864,
+      "length": 4608
+    },
+    "blocks.0.fc1.bias": {
+      "shape": [
+        96
+      ],
+      "offset": 17472,
+      "length": 96
+    },
+    "blocks.0.fc2.weight": {
+      "shape": [
+        48,
+        96
+      ],
+      "offset": 17568,
+      "length": 4608
+    },
+    "blocks.0.fc2.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 22176,
+      "length": 48
+    },
+    "blocks.1.norm1.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 22224,
+      "length": 48
+    },
+    "blocks.1.norm1.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 22272,
+      "length": 48
+    },
+    "blocks.1.qkv.weight": {
+      "shape": [
+        144,
+        48
+      ],
+      "offset": 22320,
+      "length": 6912
+    },
+    "blocks.1.qkv.bias": {
+      "shape": [
+        144
+      ],
+      "offset": 29232,
+      "length": 144
+    },
+    "blocks.1.proj.weight": {
+      "shape": [
+        48,
+        48
+      ],
+      "offset": 29376,
+      "length": 2304
+    },
+    "blocks.1.proj.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 31680,
+      "length": 48
+    },
+    "blocks.1.norm2.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 31728,
+      "length": 48
+    },
+    "blocks.1.norm2.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 31776,
+      "length": 48
+    },
+    "blocks.1.fc1.weight": {
+      "shape": [
+        96,
+        48
+      ],
+      "offset": 31824,
+      "length": 4608
+    },
+    "blocks.1.fc1.bias": {
+      "shape": [
+        96
+      ],
+      "offset": 36432,
+      "length": 96
+    },
+    "blocks.1.fc2.weight": {
+      "shape": [
+        48,
+        96
+      ],
+      "offset": 36528,
+      "length": 4608
+    },
+    "blocks.1.fc2.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 41136,
+      "length": 48
+    },
+    "blocks.2.norm1.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 41184,
+      "length": 48
+    },
+    "blocks.2.norm1.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 41232,
+      "length": 48
+    },
+    "blocks.2.qkv.weight": {
+      "shape": [
+        144,
+        48
+      ],
+      "offset": 41280,
+      "length": 6912
+    },
+    "blocks.2.qkv.bias": {
+      "shape": [
+        144
+      ],
+      "offset": 48192,
+      "length": 144
+    },
+    "blocks.2.proj.weight": {
+      "shape": [
+        48,
+        48
+      ],
+      "offset": 48336,
+      "length": 2304
+    },
+    "blocks.2.proj.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 50640,
+      "length": 48
+    },
+    "blocks.2.norm2.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 50688,
+      "length": 48
+    },
+    "blocks.2.norm2.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 50736,
+      "length": 48
+    },
+    "blocks.2.fc1.weight": {
+      "shape": [
+        96,
+        48
+      ],
+      "offset": 50784,
+      "length": 4608
+    },
+    "blocks.2.fc1.bias": {
+      "shape": [
+        96
+      ],
+      "offset": 55392,
+      "length": 96
+    },
+    "blocks.2.fc2.weight": {
+      "shape": [
+        48,
+        96
+      ],
+      "offset": 55488,
+      "length": 4608
+    },
+    "blocks.2.fc2.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 60096,
+      "length": 48
+    },
+    "norm.weight": {
+      "shape": [
+        48
+      ],
+      "offset": 60144,
+      "length": 48
+    },
+    "norm.bias": {
+      "shape": [
+        48
+      ],
+      "offset": 60192,
+      "length": 48
+    },
+    "head.weight": {
+      "shape": [
+        10,
+        48
+      ],
+      "offset": 60240,
+      "length": 480
+    },
+    "head.bias": {
+      "shape": [
+        10
+      ],
+      "offset": 60720,
+      "length": 10
+    }
+  },
+  "metadata": {
+    "dataset": "MNIST",
+    "training_samples": 55000,
+    "validation_samples": 5000,
+    "test_samples": 10000,
+    "test_accuracy": 0.9901,
+    "validation_accuracy": 0.987,
+    "epochs": 16,
+    "seed": 42,
+    "parameters": 60730,
+    "training_seconds": 241.6,
+    "normalization": {
+      "mean": 0.1307,
+      "std": 0.3081
+    },
+    "augmentation": "rotation +/-11.5 deg, translation +/-1.96 px, scale 0.9-1.1",
+    "dataset_source": "https://github.com/cvdfoundation/mnist",
+    "architecture": "Pre-LN ViT; 16 image patches + CLS; 3 blocks; 4 heads; dim 48; MLP 96; GELU(tanh)"
+  }
+}
